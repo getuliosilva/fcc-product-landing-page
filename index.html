@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>
+      Marie's Wonderful Pies
+    </title>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body class="container">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header id="header">
+
+      <div class="logo">
+        <img id="header-img" src="logo.png" alt="Marie's Wonderful Pies logo"/>
+        <h2 id="title">Marie's Wonderful Pies</h2>
+      </div>     
+
+      <nav id="nav-bar">
+        <a href="#text" class="nav-link">
+          <p>Discover why our pies are the best</p>
+        </a>
+        <a href="#recipe" class="nav-link">
+          <p>See how they are made</p>
+        </a>
+        <a href="#subscribe" class="nav-link">
+          <p>Subscribe to our newsletter</p>
+        </a>
+      </nav>    
+
+    </header>
+
+    <div id="responsive">
+
+      <section id="text">
+        <h2 id="text-title">Why our pies are the best</h2>
+        <p id="text-content">Made with the best ingredients, fresh from the farm. Our recipes have been with our family for 10 generations and now you can taste it too. Tradition meets technology inside our kitchens where the best food scientists monitor every parameter to guarantee only perfect pies leave the factory.</p>
+      </section>
+
+      <section id="recipe">
+        <h2>See how they are made</h2>
+        <iframe id="video" width="280" height="158" src="https://www.youtube.com/embed/VwomP7Urrr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section id="subscribe">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h2>Subscribe to our newsletter:</h2>
+
+          <div class="form-item">
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="mail@mail.com" required>
+          </div>
+
+          <input id="submit" type="submit" value="Subscribe">
+        </form>
+      </section>
+
+    </div>
+
+    <footer>
+        <a id="cc-img" rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">
+          <img alt="Creative Commons License" style="border-width:0"
+            src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+        </a>
+        <p>
+          This work is licensed under a <a id="cc-text" rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
+        <a target="_blank" href="https://github.com/getuliosilva/fcc-product-landing-page">See the source code for this page on github</a>
+    </footer>
+  </body>

@@ -1,0 +1,179 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@keyframes rotation {
+    10% {
+        transform: rotate(36deg);
+    }
+    20% {
+        transform: rotate(72deg);
+    }
+    30% {
+        transform: rotate(108deg);
+    }
+    40% {
+        transform: rotate(144deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(216deg);
+    }
+    70% {
+        transform: rotate(252deg);
+    }
+    80% {
+        transform: rotate(288deg);
+    }
+    90% {
+        transform: rotate(324deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.nav-link {
+    border-width: 0.5px;
+    border-color: black;
+    border-style: solid;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2px;
+    border-radius: 5%;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    height: 135px;
+    width: 100%;
+}
+
+#header-img {
+    animation-name: rotation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    margin: auto;
+    max-width: 18%;
+}
+
+#title {
+    font-family: cursive;
+    color: red;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#text {
+    text-align: justify;
+    width: 100%;
+    background-color: lightskyblue;
+    padding-top: 120px;
+}
+
+#text-content {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#recipe {
+    padding-top: 120px;
+    margin-top: -120px;
+    margin-bottom: 10px;
+}
+
+#subscribe {
+    background-color: lightskyblue;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+body {
+    margin: auto;
+    min-height: 100vh;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+@media (min-width: 1280px) {
+    .logo {
+        margin-top: 20px;
+    }
+
+    #nav-bar {
+        visibility: hidden;
+    }
+    
+    #responsive {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+    }
+
+    #text {
+        width: 30%;
+        height: 400px;
+        padding: 0px;
+    }
+    
+    #recipe {
+        width: 30%;
+        height: 400px;
+        background-color: lightsalmon;
+        margin: auto;
+        padding: 0px;
+    }
+
+    #video {
+        width: 90%;
+        height: 80%;
+    }
+
+    #subscribe {
+        width: 30%;
+        background-color: lightsalmon;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 1280px) {
+    #desktop{
+        width: 100%;
+    }
+}
